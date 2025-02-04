@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhwa Reader</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        img { width: 100%; max-width: 800px; display: block; margin: 10px auto; }
+    </style>
+</head>
+<body>
+    <h1>Read Manhwa</h1>
+    
+    <div id="reader"></div>
+
+    <script>
+        const images = [
+            "manhwa1/page1.jpg",
+            "manhwa1/page2.jpg",
+            "manhwa1/page3.jpg"
+        ];
+        
+        const reader = document.getElementById("reader");
+        images.forEach(imgSrc => {
+            const img = document.createElement("img");
+            img.src = imgSrc;
+            reader.appendChild(img);
+        });
+    </script>
+</body>
+</html>
